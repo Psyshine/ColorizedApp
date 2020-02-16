@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CollorSetupViewController.swift
 //  ColorizedApp
 //
 //  Created by Andry Pro on 16.02.2020.
@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ColorSetupViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        
     }
+    
+    
 
-
+   
 }
-

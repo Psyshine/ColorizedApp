@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		8E7D6A3C23F974E9006EE722 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D6A3B23F974E9006EE722 /* AppDelegate.swift */; };
 		8E7D6A3E23F974E9006EE722 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D6A3D23F974E9006EE722 /* SceneDelegate.swift */; };
-		8E7D6A4023F974E9006EE722 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D6A3F23F974E9006EE722 /* ViewController.swift */; };
+		8E7D6A4023F974E9006EE722 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D6A3F23F974E9006EE722 /* MainViewController.swift */; };
 		8E7D6A4323F974E9006EE722 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7D6A4123F974E9006EE722 /* Main.storyboard */; };
 		8E7D6A4523F974ED006EE722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7D6A4423F974ED006EE722 /* Assets.xcassets */; };
 		8E7D6A4823F974ED006EE722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7D6A4623F974ED006EE722 /* LaunchScreen.storyboard */; };
+		8E7D6A5523F9785C006EE722 /* ColorSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D6A5423F9785C006EE722 /* ColorSetupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8E7D6A3823F974E9006EE722 /* ColorizedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorizedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7D6A3B23F974E9006EE722 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E7D6A3D23F974E9006EE722 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8E7D6A3F23F974E9006EE722 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E7D6A3F23F974E9006EE722 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8E7D6A4223F974E9006EE722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E7D6A4423F974ED006EE722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E7D6A4723F974ED006EE722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E7D6A4923F974ED006EE722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E7D6A5423F9785C006EE722 /* ColorSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSetupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		8E7D6A3A23F974E9006EE722 /* ColorizedApp */ = {
 			isa = PBXGroup;
 			children = (
-				8E7D6A3B23F974E9006EE722 /* AppDelegate.swift */,
-				8E7D6A3D23F974E9006EE722 /* SceneDelegate.swift */,
-				8E7D6A3F23F974E9006EE722 /* ViewController.swift */,
-				8E7D6A4123F974E9006EE722 /* Main.storyboard */,
-				8E7D6A4423F974ED006EE722 /* Assets.xcassets */,
-				8E7D6A4623F974ED006EE722 /* LaunchScreen.storyboard */,
-				8E7D6A4923F974ED006EE722 /* Info.plist */,
+				8E7D6A5123F9752C006EE722 /* ViewControllers */,
+				8E7D6A5323F97553006EE722 /* Protocols */,
+				8E7D6A5023F97519006EE722 /* SupportingFiles */,
+				8E7D6A4F23F97507006EE722 /* Storyboards */,
+				8E7D6A5223F97545006EE722 /* Resources */,
 			);
 			path = ColorizedApp;
+			sourceTree = "<group>";
+		};
+		8E7D6A4F23F97507006EE722 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8E7D6A4123F974E9006EE722 /* Main.storyboard */,
+				8E7D6A4623F974ED006EE722 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8E7D6A5023F97519006EE722 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8E7D6A4923F974ED006EE722 /* Info.plist */,
+				8E7D6A3B23F974E9006EE722 /* AppDelegate.swift */,
+				8E7D6A3D23F974E9006EE722 /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		8E7D6A5123F9752C006EE722 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E7D6A3F23F974E9006EE722 /* MainViewController.swift */,
+				8E7D6A5423F9785C006EE722 /* ColorSetupViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8E7D6A5223F97545006EE722 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E7D6A4423F974ED006EE722 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8E7D6A5323F97553006EE722 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E7D6A4023F974E9006EE722 /* ViewController.swift in Sources */,
+				8E7D6A4023F974E9006EE722 /* MainViewController.swift in Sources */,
+				8E7D6A5523F9785C006EE722 /* ColorSetupViewController.swift in Sources */,
 				8E7D6A3C23F974E9006EE722 /* AppDelegate.swift in Sources */,
 				8E7D6A3E23F974E9006EE722 /* SceneDelegate.swift in Sources */,
 			);
@@ -286,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DK456C5V8U;
-				INFOPLIST_FILE = ColorizedApp/Info.plist;
+				INFOPLIST_FILE = ColorizedApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Fline.ColorizedApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DK456C5V8U;
-				INFOPLIST_FILE = ColorizedApp/Info.plist;
+				INFOPLIST_FILE = ColorizedApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Fline.ColorizedApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
