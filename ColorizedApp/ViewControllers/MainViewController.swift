@@ -8,16 +8,16 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+class MainViewController: UIViewController, ColorSetupViewControllerDelegate {
+   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let colorSetupViewController = segue.destination as! ColorSetupViewController
+        colorSetupViewController.delegate = self
+        colorSetupViewController.color = view.backgroundColor
     }
 
-
-    @IBAction func unwindToColorSetup(_ unwindSegue: UIStoryboardSegue) {
-       
-    }
+    func setupViewColor(_ color: UIColor) {
+        view.backgroundColor = color
+       }
 }
 

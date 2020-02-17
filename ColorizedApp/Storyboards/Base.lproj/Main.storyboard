@@ -28,7 +28,7 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bCX-Lj-Fma" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AHE-K2-yu3"/>
                             <constraint firstItem="bCX-Lj-Fma" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IG9-ZZ-4Tn"/>
@@ -85,19 +85,22 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="utx-Z5-Ai8">
                                         <rect key="frame" x="38" y="0.0" width="34" height="118"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYd-dG-siQ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.22" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYd-dG-siQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="34" id="tD4-96-qhd"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.33" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXs-5t-Frg">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.33" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXs-5t-Frg">
                                                 <rect key="frame" x="0.0" y="42" width="34" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.34" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90v-Dn-9Ah">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.34" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90v-Dn-9Ah">
                                                 <rect key="frame" x="0.0" y="84" width="34" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -111,33 +114,45 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Xty-C5-lXd">
                                                 <rect key="frame" x="-2" y="0.0" width="147" height="40.5"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="slidrAction:" destination="RRU-86-jlU" eventType="valueChanged" id="MwA-8B-epV"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="q0Z-cS-bwo">
                                                 <rect key="frame" x="-2" y="39.5" width="147" height="40.5"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="slidrAction:" destination="RRU-86-jlU" eventType="valueChanged" id="0hx-9j-ufP"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="U2Z-6g-9i3">
                                                 <rect key="frame" x="-2" y="79" width="147" height="40"/>
+                                                <connections>
+                                                    <action selector="slidrAction:" destination="RRU-86-jlU" eventType="valueChanged" id="pP1-7c-Jr7"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="boR-1z-TGu">
                                         <rect key="frame" x="231" y="0.0" width="57" height="118"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.45" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YA8-ja-a8o">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.45" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YA8-ja-a8o">
                                                 <rect key="frame" x="0.0" y="0.0" width="57" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="57" id="MhV-LX-Col"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.55" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iLo-Ep-WmU">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.55" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iLo-Ep-WmU">
                                                 <rect key="frame" x="0.0" y="42" width="57" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.33" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EpH-bV-X02">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.33" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EpH-bV-X02">
                                                 <rect key="frame" x="0.0" y="84" width="57" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -150,7 +165,7 @@
                                     <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="YU3-ct-xOv" kind="unwind" unwindAction="unwindToColorSetup:" id="Mbs-KN-LDR"/>
+                                    <action selector="dineButtonPressed:" destination="RRU-86-jlU" eventType="touchUpInside" id="hVR-r6-Wdv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -167,9 +182,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="R5L-tX-YKr"/>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="90v-Dn-9Ah" id="DQZ-qi-YEA"/>
+                        <outlet property="blueSlider" destination="U2Z-6g-9i3" id="69H-Ys-nsW"/>
+                        <outlet property="blueTextField" destination="EpH-bV-X02" id="TqR-sc-bkJ"/>
+                        <outlet property="greenLabel" destination="UXs-5t-Frg" id="byz-5e-fft"/>
+                        <outlet property="greenSlider" destination="q0Z-cS-bwo" id="ikb-cm-xbZ"/>
+                        <outlet property="greenTextField" destination="iLo-Ep-WmU" id="q7B-gJ-I4G"/>
+                        <outlet property="mainView" destination="ahm-4I-Q8F" id="D33-Oe-BCd"/>
+                        <outlet property="redLabel" destination="YYd-dG-siQ" id="Utf-U1-H6M"/>
+                        <outlet property="redSlider" destination="Xty-C5-lXd" id="Dz4-cF-Boj"/>
+                        <outlet property="redTextField" destination="YA8-ja-a8o" id="rd2-qV-jvf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZJ-MG-z5T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="YU3-ct-xOv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="832.5" y="113.02816901408451"/>
         </scene>

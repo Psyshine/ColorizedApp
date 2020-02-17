@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E47D95723FB3A0600E08F7A /* ColorSetupViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47D95623FB3A0600E08F7A /* ColorSetupViewControllerDelegate.swift */; };
+		8E47D95A23FB3AD300E08F7A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47D95923FB3AD300E08F7A /* Extensions.swift */; };
 		8E7D6A3C23F974E9006EE722 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D6A3B23F974E9006EE722 /* AppDelegate.swift */; };
 		8E7D6A3E23F974E9006EE722 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D6A3D23F974E9006EE722 /* SceneDelegate.swift */; };
 		8E7D6A4023F974E9006EE722 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D6A3F23F974E9006EE722 /* MainViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E47D95623FB3A0600E08F7A /* ColorSetupViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSetupViewControllerDelegate.swift; sourceTree = "<group>"; };
+		8E47D95923FB3AD300E08F7A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8E7D6A3823F974E9006EE722 /* ColorizedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorizedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7D6A3B23F974E9006EE722 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E7D6A3D23F974E9006EE722 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E47D95823FB3AB500E08F7A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E47D95923FB3AD300E08F7A /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8E7D6A2F23F974E9006EE722 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +70,7 @@
 		8E7D6A3A23F974E9006EE722 /* ColorizedApp */ = {
 			isa = PBXGroup;
 			children = (
+				8E47D95823FB3AB500E08F7A /* Extensions */,
 				8E7D6A5123F9752C006EE722 /* ViewControllers */,
 				8E7D6A5323F97553006EE722 /* Protocols */,
 				8E7D6A5023F97519006EE722 /* SupportingFiles */,
@@ -106,6 +119,7 @@
 		8E7D6A5323F97553006EE722 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				8E47D95623FB3A0600E08F7A /* ColorSetupViewControllerDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -182,8 +196,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E7D6A4023F974E9006EE722 /* MainViewController.swift in Sources */,
+				8E47D95A23FB3AD300E08F7A /* Extensions.swift in Sources */,
 				8E7D6A5523F9785C006EE722 /* ColorSetupViewController.swift in Sources */,
 				8E7D6A3C23F974E9006EE722 /* AppDelegate.swift in Sources */,
+				8E47D95723FB3A0600E08F7A /* ColorSetupViewControllerDelegate.swift in Sources */,
 				8E7D6A3E23F974E9006EE722 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
